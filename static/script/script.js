@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
       // Set initial state of sound icon
-    soundIcon.src = 'soundoff.png';
+    soundIcon.src = 'static/soundoff.png';
 
     // Ensure background music starts playing on load
     backgroundMusic.play();
@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
     soundControlButton.addEventListener('click', () => {
         isSoundOn = !isSoundOn;
         if (isSoundOn) {
-            soundIcon.src = 'soundplay.png';
+            soundIcon.src = 'static/soundoff.png';
             backgroundMusic.play();
         } else {
-            soundIcon.src = 'soundoff.png';
+            soundIcon.src = 'static/soundplay.png';
             backgroundMusic.pause();
         }
     });
